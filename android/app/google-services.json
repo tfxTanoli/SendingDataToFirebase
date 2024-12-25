@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "122128999480",
+    "firebase_url": "https://fa21-bcs-130-default-rtdb.firebaseio.com",
+    "project_id": "fa21-bcs-130",
+    "storage_bucket": "fa21-bcs-130.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122128999480:android:ea7330f22ccd2d073132cd",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqpF8ksMVGV_LWMltwfTJ_BIg32nsNeQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
