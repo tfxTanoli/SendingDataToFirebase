@@ -1,8 +1,8 @@
 import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,6 +50,14 @@ class _SendDatatoDB extends State<SendDatatoDB> {
               decoration: const InputDecoration(
                   border: OutlineInputBorder(), hintText: "Enter Name"),
             ),
+            //Retreiving Data From Database
+            Expanded(
+                child: FirebaseAnimatedList(
+              query: database_ref.child('Names'),
+              itemBuilder: (context, snapshot, animation, index) => ListTile(
+                title: Text(snapshot.child('Name').value.toString()),
+              ),
+            ))
           ],
         ),
       ),
